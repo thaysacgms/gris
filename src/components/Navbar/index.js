@@ -6,16 +6,15 @@ import logo from '../../assets/logo.png';
 export default function Navbar() {
   return (
     <div id="menu">
-      <div className="menu1">
+      <div>
+      <Link to="/"><img src={logo} alt="logo" className="logo"/></Link>
+      </div>
+      <div>
       <Link to="/" className="menu-options">Início</Link>
       <Link to="/quemsomos" className="menu-options">Quem somos</Link>
-      <Link to="/servicos" className="menu-options">Serviços</Link>
-      </div>
-      <img src={logo} alt="logo" className="logo"/>
-      <div className="menu2">
-      <Link to="/criacoes" className="menu-options">Criações</Link>
-      <Link to="/eventos" className="menu-options">Eventos</Link>
-      <Link to="/querodoar" className="menu-options doar">Quero doar</Link>
+      <Link to="/acoes" className="menu-options">Ações</Link>
+      <Link to="/calendario" className="menu-options">Calendário</Link>
+      <Link to="/contribuir" className="menu-options doar">Quero contribuir</Link>
       </div>
     </div>
   );

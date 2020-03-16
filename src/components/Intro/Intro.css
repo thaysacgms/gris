@@ -1,0 +1,19 @@
+#intro {
+    background: url("../../assets/background.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.video-gris {
+    margin: 100px;
+}
+
+.descricao {
+    color: white;
+    padding-top: 90px;
+    text-align: justify;
+    width: 90%;
+}
+

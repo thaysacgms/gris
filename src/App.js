@@ -2,35 +2,38 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Services from "./pages/services";
-import Creations from "./pages/creations";
-import Events from "./pages/events";
+import Intro from "./components/Intro";
+import Calendario from "./pages/calendario";
+import Acoes from "./pages/acoes";
 import Navbar from "./components/Navbar";
+import QuemSomos from "./pages/quemsomos";
 import Footer from "./components/Footer";
-import Banner from "./components/Banner";
+
 
 function App() {
   return (
     <Router>
-      <Banner/>
-      <Navbar />
-
       <Switch>
         <Route exact path="/">
-          <Home />
+        <Navbar />
+        <Intro/>
+        <Home />
         </Route>
-        <Route exact path="/servicos">
-          <Services />
+        <Route exact path="/quemsomos">
+          <Navbar />
+          <QuemSomos />
         </Route>
-        <Route exact path="/criacoes">
-          <Creations />
+        <Route exact path="/acoes">
+          <Navbar />
+          <Acoes />
         </Route>
-        <Route exact path="/eventos">
-          <Events />
+        <Route exact path="/calendario">
+          <Navbar />
+          <Calendario />
         </Route>
       </Switch>
 
-      <Footer />
+    <Footer />
     </Router>
   );
 }
