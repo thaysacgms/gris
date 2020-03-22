@@ -3,10 +3,10 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Intro from "./components/Intro";
-import Calendario from "./pages/calendario";
-import Acoes from "./pages/acoes";
+import Calendario from "./pages/Calendario";
+import Acoes from "./pages/Acoes";
 import Navbar from "./components/Navbar";
-import QuemSomos from "./pages/quemsomos";
+import QuemSomos from "./pages/QuemSomos";
 import Footer from "./components/Footer";
 
 

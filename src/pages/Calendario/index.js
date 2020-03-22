@@ -1,5 +1,9 @@
-import React from "react";
+import React from 'react';
+import MyCalendar from './calendar';
 
 export default function Calendario() {
-  return <div>Calendário</div>;
+
+  return <div>
+    <MyCalendar/>
+  </div>;
 }
